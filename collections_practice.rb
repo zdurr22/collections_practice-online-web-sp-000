@@ -30,7 +30,7 @@ def kesha_maker(array)
   kesha = []
   array.each do |element|
     element_array = element.split
-    element_array[2] << "$"
+    element_array[2] = "$"
     kesha << element_array.join
   end
   kesha
