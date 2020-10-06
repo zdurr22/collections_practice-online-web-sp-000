@@ -43,3 +43,12 @@ end
 def sum_array(array)
   array.inject {|sum, n| sum + n}
 end
+
+def add_s(array)
+  array.each_with_index.collect |word, index|
+  if index == 2
+    word
+  else
+    word + "s"
+  end
+end
